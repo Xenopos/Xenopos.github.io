@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<a href="url "> BACK</a>
+
+<p> </p>
+<h2> Drop a Message </h2>
+
+<form id="Form ">
+<input type="name" name="Enter Name" placeholder="Enter name"> <br>
+<input type="Email" name="Enter Email" placeholder="Enter email "><br>
+    <textarea rows=10 name="comment" form="usrform" placeholder="Your Message here..."></textarea>   
+  <input type="submit">
+  <input type="reset">
+</form>
+  <br><a href=" "> inkedIn </a><a href="https://ms-my.facebook.com/dhanjosh.encila/ "> Facebook</a><a href="https://github.com/Xenopos "> Github</a>
+</html>
