@@ -28,19 +28,19 @@ header
 }
 .line{
 	border-left: 6px solid black;
-	height: 500px;
+	height: 80%;
  	position: absolute;
  	border-radius: 50px;
- 	line-height: 80%;
+ 	line-height:100%;
  	left: 8%;
 }
 
 .horizontal_line {
-    width: 90%;
-    height: 5px;
+    width: 100%;
+    height: 1%;
     border-top: 5px solid black;
-    line-height: 80%;
-    left: 10%;
+    line-height: 70%;
+    position: absolute;
 }
 
 .bodyindex
