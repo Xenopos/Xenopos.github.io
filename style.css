@@ -1,0 +1,78 @@
+/* 
+TASKS
+1. Apply style to your output from Lab Exercise 1 and 2 (Resume and Contact Form)
+2. Use a linked CSS file that contains all your style rules. (filename: style.css)
+3. You should modify the following:
+a. Heading (Color/Font Family etc.)
+b. Input fields
+c. Text
+d. Lists
+e. Table
+f. Background color
+g. Padding and background color of buttons
+h. Links to your social media accounts
+*/
+
+html
+{
+		background-color: beige;
+}
+head
+{
+
+}
+header
+{
+	font-family: bradley-hand;
+
+}
+.line{
+	border-left: 6px solid black;
+	height: 500px;
+ 	position: absolute;
+ 	border-radius: 50px;
+ 	line-height: 80%;
+ 	left: 8%;
+}
+
+.horizontal_line {
+    width: 90%;
+    height: 5px;
+    border-top: 5px solid black;
+    line-height: 80%;
+    left: 10%;
+}
+
+.bodyindex
+{
+	background-color: beige;
+	font-family: sans-serif;
+	position: absolute;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	letter-spacing: 1px;
+	height: auto;
+	width:800px;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 80%;
+	box-shadow: 2px 2px 14px 10px #eeeaea;
+	border: 5px solid gray;
+}
+
+.Programmingskill ul{
+}
+hr{
+  border: 2px solid black;
+  border-radius: 10px;
+
+}
+img
+{
+	border-radius: 400px;
+	border: 10px solid #ddd;
+	padding: 5px;
+	width: 150px;
+}
