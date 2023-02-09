@@ -76,3 +76,64 @@ img
 	padding: 5px;
 	width: 150px;
 }
+
+.Form
+{
+
+	font-family: sans-serif;
+	position: absolute;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	letter-spacing: 1px;
+	height: auto;
+	width:800px;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	box-shadow: 2px 2px 14px 10px #eeeaea;
+	border: 5px solid gray;
+	border-radius: 50px;
+}
+.submit [type=submit]{
+  background-color: seagreen;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.reset [type=reset]{
+  background-color: indianred; 
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.name [type=name]
+{
+  padding:5px;
+     padding-right:100px;
+  border-radius:5px;
+    font-size: 16px;
+
+}
+.email [type=email]
+{
+  padding:5px;
+  padding-right:100px;
+  border-radius:5px;
+  font-size: 16px;
+
+}
+.Message [type=text]
+{
+  font-size: 16px;
+  padding:10px;
+  border-radius: 5px;
+  height: 100px;
+  width: 80%;
+
+}
