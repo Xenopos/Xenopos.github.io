@@ -28,11 +28,10 @@ header
 }
 .line{
 	border-left: 6px solid black;
-	height: 80%;
+	height: 90%;
  	position: absolute;
  	border-radius: 50px;
- 	line-height:100%;
- 	left: 8%;
+  	left: 15%;
 }
 
 .horizontal_line {
