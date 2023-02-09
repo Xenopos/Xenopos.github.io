@@ -54,8 +54,8 @@ header
 	padding-left: 80px;
 	letter-spacing: 1px;
 	height: auto;
-	width:800px;
-	transform: translate(-50%, -50%);
+	width: 60%;
+	transform: translate(-45%, -50%);
 	left: 50%;
 	top: 80%;
 	box-shadow: 2px 2px 14px 10px #eeeaea;
@@ -131,9 +131,9 @@ img
 .Message [type=text]
 {
   font-size: 16px;
-  padding:10px;
+    padding:10px;
   border-radius: 5px;
-  height: 100px;
+  height: 100;
   width: 80%;
 
 }
