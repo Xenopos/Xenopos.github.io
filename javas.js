@@ -1,9 +1,18 @@
-var date;
-var currentbday;
 
-function Agecheck(){
 
-}
+function validateAge() {
+
+  var birthdate = document.getElementById("birthdate").value;
+  
+  var ageInMs = Date.now() - Date.parse(birthdate);
+  
+  var ageInYears = new Date(ageInMs).getFullYear() - 1970;
+  
+  if (ageInYears >= 18) {
+    alert("You are eligible.");
+  } else {
+    alert("You are not eligible.");
+  }
 function PassCheck(){
     var pass = document.getElementById('pwd');
 
