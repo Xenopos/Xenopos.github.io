@@ -1,0 +1,29 @@
+html
+{
+    background-color: lightslategrey;
+}
+body {
+	font-family: sans-serif;
+	position: absolute;
+	padding-top: 50px;
+	padding-right: 2px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+	letter-spacing: 1px;
+	height: auto;
+	width:35%;
+	border: 5px ;
+	border-radius: 5px;
+    background-color: white;
+    line-height: 25px;
+}
+.submit [type=submit]{
+    background-color: rgb(98, 233, 156);
+    padding: 5px 5px;
+    font-size: 16px;
+}
+.reset [type=reset]{
+    background-color: rgb(238, 81, 81);
+    padding: 5px 5px;
+    font-size: 16px;
+}
