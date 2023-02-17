@@ -1,8 +1,6 @@
 var date;
 var currentbday;
 
-
-
 function Agecheck(){
 
 }
@@ -11,7 +9,7 @@ function PassCheck(){
 
     if (pass.value.length < 8)
     {
-        messega.innerfile
+        document.getElementById('message').innerHTML = "GIT GUD"; 
     }
 }
 function ValidationCheck(){
