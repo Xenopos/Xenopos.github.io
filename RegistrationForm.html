@@ -2,12 +2,14 @@
 <html>
     <head>
         <link href="registration formcss.css" rel="stylesheet" type="text/css">
-        <script src="javas.js"></script>
+        <script type="text/javascript" script src="javas.js"></script>
+
+
     </head>
 
     <body>
         <form>
-            <h1>Registration Form</h1>
+            <h1>Registration Form</h1><br>
             <label for="Name">First name:</label><br>
             <input type="text" id="fname" name="fname"><br>
 
@@ -21,7 +23,7 @@
             <input type="email" id="email" name="email"><br>
 
             <label for="passwrd">Password:</label><br>
-            <input type="password" id="pwd" name="pwd"><br>
+            <input type="password" id="pwd" name="pwd" onkeyup="PassCheck"><br>
 
             <label for="date">Date:</label><br>
             <input type="date" id="date" name="date"><br>
@@ -46,7 +48,7 @@
                 </div>
                 
                 <div class="reset"> <br>
-                <input type="reset">
+                <input name="reset" type="reset">
                 </div>
         </form>
     </body>
