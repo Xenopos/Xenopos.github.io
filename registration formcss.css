@@ -11,11 +11,12 @@ body {
 	padding-left: 10px;
 	letter-spacing: 1px;
 	height: auto;
-	width:35%;
-	border: 5px ;
+	width:20%;
+	border: 5px;
 	border-radius: 5px;
     background-color: white;
     line-height: 25px;
+	left: 35%;
 }
 .submit [type=submit]{
     background-color: rgb(98, 233, 156);
