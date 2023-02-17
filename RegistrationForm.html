@@ -2,13 +2,13 @@
 <html>
     <head>
         <link href="registration formcss.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" script src="javas.js"></script>
-
+        <script src="javas.js"></script>
+    
 
     </head>
 
     <body>
-        <form>
+        <form onsubmit ="return PassCheck()">
             <h1>Registration Form</h1><br>
             <label for="Name">First name:</label><br>
             <input type="text" id="fname" name="fname"><br>
@@ -23,7 +23,8 @@
             <input type="email" id="email" name="email"><br>
 
             <label for="passwrd">Password:</label><br>
-            <input type="password" id="pwd" name="pwd" onkeyup="PassCheck"><br>
+            <input type="password" id="pwd" name="pwd" value="">
+            <span id = "message" style="color:red"></span><br>
 
             <label for="date">Date:</label><br>
             <input type="date" id="date" name="date"><br>
@@ -44,11 +45,11 @@
             </textarea>
 
             <div class="submit">  <br> 
-                <input name="form" type="submit" value="Submit">
+                <input name="submit" type="submit">
                 </div>
                 
                 <div class="reset"> <br>
-                <input name="reset" type="reset">
+                <button  name="reset" type="reset">Reset</button>  
                 </div>
         </form>
     </body>
