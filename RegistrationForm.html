@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="registration formcss.css" rel="stylesheet" type="text/css">
-        <script src="javas.js"></script>
-    
+<head>
+    <link href="registration formcss.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+    <script src="javas.js"></script>
+</head>
+<body>
+<form onsubmit="return validateForm()">
+    <h2>Registration Form</h2><br>
 
-    </head>
+    <div id="message"></div>
+    <label for="Name">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
 
-    <body>
-        <form onsubmit ="return PassCheck()">
-            
-            <h1>Registration Form</h1><br>
-            <label for="Name">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
 
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
+    <label for="NickName">Nick Name:</label><br>
+    <input type="text" id="nick" name="nick"><br>
 
-            <label for="NickName">Nick Name:</label><br>
-            <input type="text" id="nick" name="nick"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
+    <label for="passwrd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd" onkeyup="PassCheck()"><br>
 
-            <label for="passwrd">Password:</label><br>
-            <input type="password" id="pwd" name="pwd" value="">
-            <span id = "passnotset" style="color:red"></span><br>
+    <span id="passnotset" style="color:red"></span><br>
 
-            <label for="date">Date:</label><br>
-            <input type="date" id="date" name="date"><br>
+    <label for="date">Date:</label><br>
+ <input type="date" id="date" name="date" onchange="ageCheck()"><br>            
+    <span id="agenotset" style="color:red"></span><br>
 
-            <label for="Gender">Gender:</label><br>
+    <label for="Gender">Gender:</label><br>
 
-            <input type="radio" id="date" name="date">  Male
-          
-            <input type="radio" id="date" name="date">  Female
-   
-            <input type="radio" id="date" name="date">  Other<br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
 
-            <label for="mobilenum">Mobile:</label><br>
-            <input type="num" id="num" name="num"><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
 
-            <label for="Address">Address:</label><br>
-            <textarea name="message" rows="10" cols="30">
-            </textarea>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
 
-            <div class="submit">  <br> 
-                <input name="submit" type="submit">
-                </div>
-                
-                <div class="reset"> <br>
-                <button  name="reset" type="reset">Reset</button>  
-                </div>
-        </form>
-    </body>
-</html>
+    <label for="mobilenum">Mobile:</label><br>
+    <input type="num" id="num" name="num"><br>
+    <label for="Address">Address:</label><br>
+    <textarea name="message" rows="10" cols="30"></textarea>
+
+    <div class="submit">  <br> 
+        <input name="submit" type="submit">
+    </div>
+    <div class="reset"> <br>
+        <button name="reset" type="reset">Reset</button>   
+
+    </div>
+</form>

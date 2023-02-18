@@ -8,30 +8,41 @@ If the validation is successful, display the success message:
 Hooray! Your account has been successfully created.
 */
 
-function validateAge() {
-
-  var birthdate = document.getElementById("birthdate").value;
-  
-  var ageInMs = Date.now() - Date.parse(birthdate);
-  
-  var ageInYears = new Date(ageInMs).getFullYear() - 1970;
-  
-  if (ageInYears >= 18) {
-      
-  } 
-  else {
-    alert("Minors are not allowed!");
-  }
-
-function PassCheck(){
+function PassCheck() {
     var pass = document.getElementById('pwd');
 
-    if (pass.value.length < 8)
-    {
-        document.getElementById('passnotset').innerHTML = "Password must be at least 8 characters."; 
+    if (pass.value.length < 8) {
+        document.getElementById('passnotset').innerHTML = "Password must be at least 8 characters.";
+        return false;
+    } else {
+        return true;
     }
 }
-function ValidationCheck(){
 
+function AgeCheck() {
+    var dobInput = document.getElementById("date").value;
+    var dob = new Date(dobInput);
+    var today = new Date();
+    var age = today.getFullYear() - dob.getFullYear();
+
+    if (age < 18) {
+        document.getElementById('agenotset').innerHTML = "Minors are not allowed!";
+        return false;
+    } else {
+        document.getElementById('agenotset').innerHTML = "";
+        return true;
+    }
 }
 
+function validateForm() {
+    var isPassValid = PassCheck();
+    var isAgeValid = AgeCheck();
+
+    if (isPassValid && isAgeValid) {
+        alert("Hooray! Your account has been successfully created.");
+        return true;
+    } else {
+        document.getElementById('message').innerHTML = "Please fix the errors below:";
+        return false;
+    }
+}

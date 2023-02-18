@@ -3,20 +3,22 @@ html
     background-color: lightslategrey;
 }
 body {
-	font-family: sans-serif;
+
+
 	position: absolute;
 	padding-top: 50px;
 	padding-right: 2px;
 	padding-bottom: 50px;
-	padding-left: 10px;
+	padding-left: 30px;
 	letter-spacing: 1px;
 	height: auto;
 	width:20%;
 	border: 5px;
 	border-radius: 5px;
     background-color: white;
-    line-height: 25px;
-	left: 35%;
+    line-height: 20px;
+	left: 30%;
+font-family: Oswald;
 }
 .submit [type=submit]{
     background-color: rgb(98, 233, 156);
@@ -27,4 +29,24 @@ body {
     background-color: rgb(238, 81, 81);
     padding: 5px 5px;
     font-size: 16px;
+}
+.submit input[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset button[type="reset"] {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}.submit, .reset {
+    display: inline-block;
+    margin-top: 10px;
 }
