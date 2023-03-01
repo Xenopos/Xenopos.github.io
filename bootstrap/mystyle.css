@@ -5,7 +5,7 @@
     background: url("assets/Intersect.png") no-repeat;
     background-position: right top;
     background-size:contain;
-    background-color: #FFD699;
+    background-color: #ffd699;
     background-attachment: fixed;
 }
 .vr
@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6
 }
 .carousel-item 
 {
-    height: 500px;
+    height: 400px;
 }
 .carousel-item img
 {
